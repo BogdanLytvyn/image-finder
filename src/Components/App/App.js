@@ -65,7 +65,7 @@ export default class App extends Component {
     return (
       <>
         <Searchbar onSubmit={this.handlerSearchFormSubmit}></Searchbar>
-        {error && <p>Oooops, something went wrong: {error.message}</p>}
+        {error && <p>Something went wrong: {error.message}</p>}
         {images.length > 0 && (
           <ImageGallery
             images={images}
